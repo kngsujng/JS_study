@@ -1,0 +1,21 @@
+.alert-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.alert{
+    background-color: skyblue;
+    padding: 20px;
+    color: white;
+    border-radius: 5px;
+    display: none;
+}
+
+.btn-close{
+    display: none;
+    width: 20px;
+    height: 20px;
+    float: right;
+}
