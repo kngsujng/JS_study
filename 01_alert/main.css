@@ -1,11 +1,4 @@
 .alert-box{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-.alert{
     background-color: skyblue;
     padding: 20px;
     color: white;

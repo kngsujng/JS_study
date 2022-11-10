@@ -8,17 +8,22 @@
     <link rel="stylesheet" href="./main.css">
 </head>
 <body>
-    <div class="alert-box">
-        <p class="alert">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis veniam quas facere provident nihil? Nam adipisci reiciendis corporis reprehenderit est recusandae hic dignissimos quibusdam dolore, sint corrupti esse dicta quae?</p>
-        <button type="button" class="btn-close" onclick="document.querySelector('.alert-box').style.display = 'none'">X</button>
+    <div class="alert-box" id="alert">
+        <p>알림창임</p>
+        <button onclick="알림창열기('none')">닫기</button>
     </div>
-    <button onclick=
-        "document.querySelector('.alert').style.display = 'block'">버튼</button>
+    <button onclick="입력창열기('아이디 입력하세요');">버튼1</button>
+    <button onclick="입력창열기('비밀번호 입력하세요');">버튼2</button>
 
     <script>
-        const btnClose = document.addEventListener("click", function(){
-            document.querySelector(".btn-close").style.display = 'block';
-        })
+        function 알림창열기(a){
+            document.getElementById("alert").style.display = a;
+        }
+
+        function 입력창열기(a){
+            document.getElementById("alert").style.display = 'block';
+            document.getElementById("alert").innerText = a;
+        }
     </script>
 </body>
 </html>
