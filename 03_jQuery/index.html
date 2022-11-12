@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <script
+    src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+    crossorigin="anonymous"></script>
+</head>
+<body>
+    <p class="hello">안녕</p>
+    <p class="hello">안녕</p>
+    <p class="hello">안녕</p>
+    <button id="test-btn">버튼</button>
+
+    <script>
+        //document.querySelector('.hello').innerHTML = "바보";
+        //$('.hello').html("바보");
+
+        $('.hello').css('color', 'red');
+
+        $('.hello').addClass('show');
+
+        //document.querySelectorAll('.hello')[0].innerHTML = "바보";
+        //document.querySelectorAll('.hello')[1].innerHTML = "바보";
+        //document.querySelectorAll('.hello')[2].innerHTML = "바보";
+        $('.hello').html('바보');
+
+        //document.querySelector('#test-btn').addEventListener();
+        $("#test-btn").on('click', function(){
+            $(".hello").slideUp();
+        });
+
+        //주의 ! 
+        //$('셀렉터')로 찾으면 jQuery 함수만 붙일 수 있다. 
+        //querySelector('셀렉터')로 찾으면 자바스크립트 함수만 붙일 수 있다. 
+    </script>
+</body>
+</html>
