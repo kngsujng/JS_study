@@ -10,15 +10,15 @@
 <body>
     <div class="alert-box" id="alert">
         <p>알림창임</p>
-        <button onclick="알림창열기('none')">닫기</button>
+        <button id="close">닫기</button>
     </div>
     <button onclick="입력창열기('아이디 입력하세요');">버튼1</button>
     <button onclick="입력창열기('비밀번호 입력하세요');">버튼2</button>
 
     <script>
-        function 알림창열기(a){
-            document.getElementById("alert").style.display = a;
-        }
+        document.getElementById("close").addEventListener('click', function(){
+            document.getElementById("alert").style.display = 'none';
+        });
 
         function 입력창열기(a){
             document.getElementById("alert").style.display = 'block';
